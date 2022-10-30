@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Asset Coin - Register</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" />
+  <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="styles/animate.css" rel="stylesheet" type="text/css" />
+  <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+  <link href="styles/images/favicon.png" rel="icon" />
+  <script src="styles/jquery.js" type="text/javascript"></script>
+  <script src="styles/wow.js"></script>
+  <script src="styles/wow.min.js"></script>
+  <script src="styles/bootstrap.min.js" type="text/javascript"></script>
+  <script src="styles/setting2.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en'
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
+  </script>
+  <div class="wrapper">
+    <div class="headerContainer">
+      <div class="headerInner fadeInLeft wow"> <a href="index.html" id="logo"></a>
+        <div class="hdRight">
+          <div class="mainNavRight">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="rules.html">Rules</a></li>
+                  <li><a href="support.html">Support</a></li>
+
+                  <li><a class="login" href="login.html">login</a></li>
+                  <li><a class="signup" href="signup.html">signup</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bannerContainer insidepages">
+      <div class="bannerInner fadeInRight wow">
+        <div class="ctn-banner">
+          <h3><span>signup account</span></h3>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="inside_wrap fadeInUp wow">   
+      <div class="framebody">    
+        <div class="loginwrap">
+          <div class="main_logo">
+            <a href="index.html" id="logo"></a>
+          </div>    
+          <div class="form-container-wrap">    
+            <script language=javascript>
+              function checkform() {
+                if (document.regform.fullname.value == '') {
+                  alert("Please enter your full name!");
+                  document.regform.fullname.focus();
+                  return false;
+                }
+                if (document.regform.username.value == '') {
+                  alert("Please enter your username!");
+                  document.regform.username.focus();
+                  return false;
+                }
+                if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+                  alert("Username should use alphabets and digits only!");
+                  document.regform.username.focus();
+                  return false;
+                }
+                if (document.regform.password.value == '') {
+                  alert("Please enter your password!");
+                  document.regform.password.focus();
+                  return false;
+                }
+                if (document.regform.password.value != document.regform.password2.value) {
+                  alert("Please check your password!");
+                  document.regform.password2.focus();
+                  return false;
+                }
+
+
+                if (document.regform.email.value == '') {
+                  alert("Please enter your e-mail address!");
+                  document.regform.email.focus();
+                  return false;
+                }
+                if (document.regform.email.value != document.regform.email1.value) {
+                  alert("Please retype your e-mail!");
+                  document.regform.email.focus();
+                  return false;
+                }
+                for (i in document.regform.elements) {
+                  f = document.regform.elements[i];
+                  if (f.name && f.name.match(/^pay_account/)) {
+                    if (f.value == '') continue;
+                    var notice = f.getAttribute('data-validate-notice');
+                    var invalid = 0;
+                    if (f.getAttribute('data-validate') == 'regexp') {
+                      var re = new RegExp(f.getAttribute('data-validate-regexp'));
+                      if (!f.value.match(re)) {
+                        invalid = 1;
+                      }
+                    } else if (f.getAttribute('data-validate') == 'email') {
+                      var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+                      if (!f.value.match(re)) {
+                        invalid = 1;
+                      }
+                    }
+                    if (invalid) {
+                      alert('Invalid account format. Expected ' + notice);
+                      f.focus();
+                      return false;
+                    }
+                  }
+                }
+                if (document.regform.agree.checked == false) {
+                  alert("You have to agree with the Terms and Conditions!");
+                  return false;
+                }
+                return true;
+              }
+              function IsNumeric(sText) {
+                var ValidChars = "0123456789";
+                var IsNumber = true;
+                var Char;
+                if (sText == '') return false;
+                for (i = 0; i < sText.length && IsNumber == true; i++) {
+                  Char = sText.charAt(i);
+                  if (ValidChars.indexOf(Char) == -1) {
+                    IsNumber = false;
+                  }
+                }
+                return IsNumber;
+              }
+            </script>    
+    
+            <form method=post onsubmit="return checkform()" name="regform">
+              <input type="hidden" name="form_id" value="16539916451687">
+              <input type="hidden" name="form_token" value="43875d440dd6747014ef98ebe1913f61">
+              <input type=hidden name=a value="signup">
+              <input type=hidden name=action value="signup">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <table border="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td width="1000%"> 
+                        <input class="inpts" name="fullname" placeholder="Your Full Name" size="30"  type="text" value="" /> 
+                      </td>
+                    </tr>    
+                    <tr>   
+                      <td>
+                        <input class="inpts" name="username" placeholder="Your Username" size="30" type="text" value="" />   
+                      </td>   
+                    </tr>   
+                    <tr>   
+                      <td>
+                        <input class="inpts" name="password" placeholder="Define Password" size="30" type="password" value="" />    
+                      </td>   
+                    </tr>    
+                    <tr>   
+                      <td>    
+                        <input class="inpts" name="password2" placeholder="Retype Password" size="30" type="password" value="" />
+                      </td>    
+                    </tr>   
+                    <tr>    
+                      <td>   
+                        <input class="inpts" name="email" placeholder="Your E-mail Address" size="30" type="text" value="" />   
+                      </td>   
+                    </tr>    
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <table border="0" cellspacing="0" width="100%">    
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input class="inpts" name="email1" placeholder="Retype Your E-mail" size="30" type="text" value="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="inpts" name="sq" placeholder="Secret Question" size="30" type="text" value="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="inpts" name="sa" placeholder="Secret Answer" size="30" type="text" value="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <div class="iagree">
+                          <input name="agree" type="checkbox" value="1" /> I agree with <a href="rules.html">
+                            T&amp;C </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input class="sbmt" type="submit" value="Register" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <input type="hidden" name="extra" value="bd3260a6a9cd43be8766785723b5aa60588e2f35">
+              <p style="display:none;">Leave this empty:<input name="url" size=30 class=inpts type="text"></p>
+            </form>
+          </div>
+        </div>   
+      </div>   
+    
+      <script type="text/javascript">
+        function checkform() {
+          if (document.regform.fullname.value == '') {
+            alert("Please enter your full name!");
+            document.regform.fullname.focus();
+            return false;
+          }
+
+          if (document.regform.username.value == '') {
+            alert("Please enter your username!");
+            document.regform.username.focus();
+            return false;
+          }
+          if (document.regform.password.value == '') {
+            alert("Please enter your password!");
+            document.regform.password.focus();
+            return false;
+          }
+          if (document.regform.password.value != document.regform.password2.value) {
+            alert("Please check your password!");
+            document.regform.password2.focus();
+            return false;
+          }
+
+          if (document.regform.email.value == '') {
+            alert("Please enter your e-mail address!");
+            document.regform.email.focus();
+            return false;
+          }
+
+          if (document.regform.email.value != document.regform.email1.value) {
+            alert("Please retupe your e-mail!");
+            document.regform.email.focus();
+            return false;
+          }
+
+          if ((document.regform.agree.checked == false) && (document.regform.action == 'signup')) {
+            alert("You have to agree with the Terms and Conditions!");
+            return false;
+          }
+          return true;
+        }
+
+        function IsNumeric(sText) {
+          var ValidChars = "0123456789";
+          var IsNumber = true;
+          var Char;
+          if (sText == '') return false;
+          for (i = 0; i < sText.length && IsNumber == true; i++) {
+            Char = sText.charAt(i);
+            if (ValidChars.indexOf(Char) == -1) {
+              IsNumber = false;
+            }
+          }
+          return IsNumber;
+        }
+      </script>   
+    </div>
+
+    <div class="footerContainer">
+      <div class="footerInner">
+        <div class="ft-row1">
+          <a class="ft-logo" href="index.html"></a>
+          <h3>2022 © Asset Coin Limited. All Rights Reserved</h3>
+        </div>
+        <div class="ft-part1">
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="rate-us.html">Rate us</a></li>
+            <li><a href="faq.html">Frequently asked questions</a></li>
+          </ul>
+        </div>
+        <div class="ft-part1">
+          <ul>
+    
+            <li><a href="support.html">contact us</a></li>
+            <li><a href="rules.html">terms and conditions</a></li>
+          </ul>
+        </div>
+        <div class="ft-part2">
+          <a href="#"><img src="styles/images/ft-logo2.png" /></a>
+        </div>
+      </div>
+    </div>
+    
+</body>
+    
+</html>
